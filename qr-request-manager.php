@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: QR Request Manager
- * Description: Users can request Meet & Shop QR codes. Admin uploads QR images and users can download them.
- * Version: 1.0.0
+ * Description: Users can request Meet & Shop QR codes. Admin uploads QR images and users can download them. Shortcode: [qrm_qr_section]
+ * Version: 1.1.0
  * Author: Md Shakibnur Rahman
  * Author URI: https://github.com/mdshakiburrahman
  */
@@ -24,4 +24,3 @@ add_action('plugins_loaded', function () {
     QRM_Shortcode::init();
     QRM_Ajax::init();
 });
-
