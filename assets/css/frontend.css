@@ -1,0 +1,144 @@
+/* ===== QR CARD ===== */
+.qrm-card {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* ===== HEADER ===== */
+.qrm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.qrm-user {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ===== STATUS BADGE ===== */
+.qrm-status {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-progress {
+    background: #e7f1ff;
+    color: #084298;
+}
+
+.status-completed {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+/* ===== GRID ===== */
+.qrm-qr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* ===== QR BOX ===== */
+.qrm-qr-box {
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrm-qr-box h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* .qrm-qr-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 12px;
+} */
+
+/* ===== DOWNLOAD BUTTON ===== */
+.qrm-download {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #e91e63;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.qrm-download:hover {
+    background: #c2185b;
+}
+
+/* ===== NOT READY ===== */
+.qrm-pending {
+    color: #888;
+    font-style: italic;
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.qrm-image-wrap {
+    width: 100%;
+    height: 220px;             
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== IMAGE ITSELF ===== */
+.qrm-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .qrm-qr-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qrm-card {
+        padding: 18px;
+    }
+
+    .qrm-user {
+        font-size: 15px;
+    }
+    .qrm-image-wrap {
+        height: 180px;
+    }
+}
